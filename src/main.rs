@@ -15,11 +15,18 @@ fn main() {
     loop {
         println!("Setting High!");
 
-        pin22.set_high();
-        pin23.set_high();
-        pin24.set_high();
-        pin25.set_high();
 
+
+        pin22.set_high();
+        thread::sleep(Duration::from_millis(500));
+
+        pin23.set_high();
+        thread::sleep(Duration::from_millis(500));
+
+        pin24.set_high();
+        thread::sleep(Duration::from_millis(500));
+
+        pin25.set_high();
         thread::sleep(Duration::from_millis(500));
 
         println!("Setting Low!");
